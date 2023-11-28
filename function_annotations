@@ -1,0 +1,17 @@
+* It is a feature that allows you to add metadata to function parameters and return values.
+* Annotations are stored in the __annotations__ attribute of the function as a dictionary
+
+
+
+Eg1:
+def fun(f_name:str,l_name:str="Tammisetty")->str:
+    print(fun.__annotations__)
+    print("Arguments :",f_name,l_name)
+    return f_name+" "+l_name
+x=fun("Siva")
+print(x)
+
+o/p:
+{'f_name': <class 'str'>, 'l_name': <class 'str'>, 'return': <class 'str'>}
+Arguments : Siva Tammisetty
+Siva Tammisetty
